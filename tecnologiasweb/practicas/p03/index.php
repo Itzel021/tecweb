@@ -59,13 +59,51 @@
         asignaciones</p>
     <ul>
         <li>
-            Al modificar los valores de las variables $a y $b, los cambios  afectan<br>
+            Al modificar los valores de las variables $a y $b, los cambios afectan<br>
             a los valores originales y a las variables que hacen referencia e él,<br>
             porque no se realiza una copia de los valores. <br>
             Es decir, que la variable contendra el último valor asignado, es por ello<br>
             que al mostrar el contenido todo dice "PHP server".
         </li>
     </ul>
+    <!--e. Utiliza la función correspondiente de PHP para liberar las variables utilizadas al final
+    de cada ejercicio, de lo contrario habrá conflictos.-->
+    <?php
+    unset($a,$b,$c);
+    ?>
+    <h2>Ejercicio 3</h2>
+    <p>3. Muestra el contenido de cada variable inmediatamente después de cada asignación, <br>
+        verificar la evolución del tipo de estas variables (imprime todos los componentes de los
+        arreglo):</p>
+    <p>$a = “PHP5”; $z[] = &$a; $b = “5a version de PHP”;</p>
+    <p>$c = $b*10; $a .= $b; $b *= $c; $z[0] = “MySQL”;</p>
+    <?php
+    //Código PHP
+    $a = "PHP5";
+    echo "Contenido de \$a después de la primera asignación: $a<br>";
+
+    $z[] = &$a;
+    echo "Contenido de \$z después de la asignación de referencia: ";
+    print_r($z);
+    echo "<br>";
+
+    $b = "5a versión de PHP";
+    echo "Contenido de \$b después de la segunda asignación: $b<br>";
+
+    $c = $b * 10;
+    echo "Contenido de \$c después de la tercera asignación: $c<br>";
+
+    $a .= $b;
+    echo "Contenido de \$a después de la concatenación: $a<br>";
+
+    $b *= $c;
+    echo "Contenido de \$b después de la multiplicación: $b<br>";
+
+    $z[0] = "MySQL";
+    echo "Contenido de \$z después de la última asignación: ";
+    print_r($z);
+    echo "<br>";
+    ?>
 </body>
 
 </html>
