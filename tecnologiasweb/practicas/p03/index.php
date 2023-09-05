@@ -104,6 +104,23 @@
     print_r($z);
     echo "<br>";
     ?>
+    <h2>Ejercicio 4</h2>
+    <p>4. Lee y muestra los valores de las variables del ejercicio anterior, pero ahora con la ayuda de <br>
+        la matriz $GLOBALS o del modificador global de PHP.</p>
+    <?php
+    //Código PHP
+    $GLOBALS['a'];
+    echo "\$a tiene el valor de: $a";
+    echo "<br>";
+    $GLOBALS['b'];
+    echo "\$b tiene el valor de: $b";
+    echo "<br>";
+    $GLOBALS['c'];
+    echo "\$c tiene el valor de: $c";
+    echo "<br>";
+    $GLOBALS['z'];
+    echo "\$z tiene el valor de: $z";
+    ?>
 </body>
 
 </html>
