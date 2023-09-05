@@ -121,6 +121,26 @@
     $GLOBALS['z'];
     echo "\$z tiene el valor de: $z";
     ?>
+    <!--e. Utiliza la función correspondiente de PHP para liberar las variables utilizadas al final
+    de cada ejercicio, de lo contrario habrá conflictos.-->
+    <?php
+    unset($a,$b,$c,$z);
+    ?>
+    <h2>Ejercicio 5</h2>
+    <p>5. Dar el valor de las variables $a, $b, $c al final del siguiente script:</p>
+    <p>$a = “7 personas”; $b = (integer) $a; $a = “9E3”; $c = (double) $a;</p>
+    <?php
+    $a = '7 personas';
+    $b = (integer) $a;
+    $a = '9E3';
+    $c = (double) $a;
+    
+    echo "\$a: $a";
+    echo "<br>";
+    echo "\$b: $b"; 
+    echo "<br>";
+    echo "\$c: $c"; 
+    ?>
 </body>
 
 </html>
