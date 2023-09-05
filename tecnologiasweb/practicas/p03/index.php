@@ -34,8 +34,8 @@
     <p> $c = &$a;</p>
     <?php
     //Código PHP
-    $a = "ManejadorSQL";
-    $b = 'MySQL';
+    $a = "PHP server";
+    $b = &$a;
     $c = &$a;
     echo '<p>a. Ahora muestra el contenido de cada variable</p>';
     echo ($a);
@@ -44,6 +44,28 @@
     echo '<br>';
     echo ($c);
     ?>
+    <p>b. Agrega al código actual las siguientes asignaciones:</p>
+    <p>$a = “PHP server”;</p>
+    <p>$b = &$a;</p>
+    <?php
+      //Código PHP
+    echo '<p>c. Vuelve a mostrar el contenido de cada uno:</p>';
+    echo ($a);
+    echo '<br>';
+    echo ($b);
+    echo '<br>';
+    ?>
+    <p>d. Describe y muestra en la página obtenida qué ocurrió en el segundo bloque de
+        asignaciones</p>
+    <ul>
+        <li>
+            Al modificar los valores de las variables $a y $b, los cambios  afectan<br>
+            a los valores originales y a las variables que hacen referencia e él,<br>
+            porque no se realiza una copia de los valores. <br>
+            Es decir, que la variable contendra el último valor asignado, es por ello<br>
+            que al mostrar el contenido todo dice "PHP server".
+        </li>
+    </ul>
 </body>
 
 </html>
