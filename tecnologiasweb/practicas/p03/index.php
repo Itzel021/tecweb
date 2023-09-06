@@ -190,7 +190,7 @@
     $c_string = var_export($c_bool, true);
     $e_string = var_export($e_bool, true);
     
-    echo '<strong>RESPUESTA. </strong>Función boolval() para obtener el valor booleano de la variable. <br>
+    echo '<strong>RESPUESTA.</strong>Función boolval() para obtener el valor booleano de la variable. <br>
         Después usar var_export() para convertir el valor booleano a una cadena.<br>
         Finalmente mostrarlo con echo.<br>';
     echo "\$c = $c_string";
