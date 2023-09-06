@@ -175,6 +175,22 @@
     echo '</li>';
     echo '</ul>';
     ?>
+    <p>Después investiga una función de PHP que permita transformar el valor booleano de $c y $e <br>
+        en uno que se pueda mostrar con un echo:</p>
+    <?php
+    $c_bool = boolval($c);
+    $e_bool = boolval($e);
+    
+    $c_string = var_export($c_bool, true);
+    $e_string = var_export($e_bool, true);
+    
+    echo 'Función boolval() para obtener el valor booleano de la variable. <br>
+        Después usar var_export() para convertir el valor booleano a una cadena.<br>
+        Finalmente mostrarlo con echo.<br>';
+    echo "\$c = $c_string";
+    echo "<br>";
+    echo "\$e = $e_string";
+    ?>
 </body>
 
 </html>
